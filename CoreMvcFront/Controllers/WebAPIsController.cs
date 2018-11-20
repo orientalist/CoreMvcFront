@@ -4,6 +4,7 @@ using CoreMvcFront.Services;
 using System;
 using Microsoft.Extensions.Options;
 using CoreMvcFront.Utility;
+using System.Collections.Generic;
 
 namespace CoreMvcFront.Front
 {
@@ -21,7 +22,15 @@ namespace CoreMvcFront.Front
             ResponseModel Result=new ResponseModel();
             navBarBL=new NavBarBL();
             try{
-                var NavBarItems=navBarBL.GetAllNavBar();
+                List<NavBarMenuModel> NavBarItems=navBarBL.GetAllNavBar(ConfigHelper.ConnectionString);
+                if(NavBarItems.Count>0){
+                    Result.HttpStatus="1";
+                    Result.Message="OK";
+                    Result.Data=NavBarItems;
+                }else{
+                    Result.HttpStatus="-5";
+                    Result.Message="No Data";
+                }
             }
             catch(Exception ex){
 
