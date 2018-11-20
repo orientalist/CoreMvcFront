@@ -1,0 +1,11 @@
+C:\Git\CoreMvcFront\bin\Debug\netcoreapp2.0\CoreMvcFront.deps.json
+C:\Git\CoreMvcFront\bin\Debug\netcoreapp2.0\CoreMvcFront.runtimeconfig.json
+C:\Git\CoreMvcFront\bin\Debug\netcoreapp2.0\CoreMvcFront.runtimeconfig.dev.json
+C:\Git\CoreMvcFront\bin\Debug\netcoreapp2.0\CoreMvcFront.dll
+C:\Git\CoreMvcFront\bin\Debug\netcoreapp2.0\CoreMvcFront.pdb
+C:\Git\CoreMvcFront\obj\Debug\netcoreapp2.0\CoreMvcFront.csprojResolveAssemblyReference.cache
+C:\Git\CoreMvcFront\obj\Debug\netcoreapp2.0\CoreMvcFront.csproj.CoreCompileInputs.cache
+C:\Git\CoreMvcFront\obj\Debug\netcoreapp2.0\CoreMvcFront.AssemblyInfoInputs.cache
+C:\Git\CoreMvcFront\obj\Debug\netcoreapp2.0\CoreMvcFront.AssemblyInfo.cs
+C:\Git\CoreMvcFront\obj\Debug\netcoreapp2.0\CoreMvcFront.dll
+C:\Git\CoreMvcFront\obj\Debug\netcoreapp2.0\CoreMvcFront.pdb

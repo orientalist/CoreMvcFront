@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CoreMvcFront</title>
+    <link rel="stylesheet" href="~/css/BootStrap/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/Jquery/jquery-ui.min.css">
+    <style>
+        #topBar{
+            background-color:#0044BB;
+        }
+    </style>
+    <script src="~/js/Jquery/jquery.js"></script>
+    <script src="~/js/BootStrap/bootstrap.bundle.min.js"></script>
+    <script src="~/js/Jquery/jquery-ui.min.js"></script>    
+    <script src="~/js/NanBar.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" id="topBar">
+        <a class="navbar-brand" href="#" style="color:white;">Zhuang's Zone</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarAll">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarAll">
+            <ul class="navbar-nav mr-auto">
+                <!-- <li class="nav-item active">
+                    <a class="nav-link" href="#" id="TheMeetingRoom.html">TheMeetingRoom</a>
+                </li> -->                
+            </ul>
+        </div>
+    </nav> 
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+        </footer>
+    </div>
+</body>
+</html>
