@@ -6,5 +6,10 @@ namespace CoreMvcFront.Front{
             
             return View();
         }
+
+        public IActionResult Git(){
+
+            return View();
+        }
     }
 }

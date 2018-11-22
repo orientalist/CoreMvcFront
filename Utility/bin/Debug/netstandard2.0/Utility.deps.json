@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "06c9bb526d53b8e30fc52b8f95ffe7e305e86655"
+    "signature": "fe88a386cfe90830ffeb5658d9509ff92ba0be22"
   },
   "compilationOptions": {},
   "targets": {
@@ -12,7 +12,7 @@
           "Microsoft.Extensions.Options.ConfigurationExtensions": "2.2.0-preview3-35497",
           "Model": "1.0.0",
           "MySql.Data": "8.0.13",
-          "NETStandard.Library": "2.0.1"
+          "NETStandard.Library": "2.0.0"
         },
         "runtime": {
           "Utility.dll": {}
@@ -20,7 +20,7 @@
       },
       "Google.Protobuf/3.5.1": {
         "dependencies": {
-          "NETStandard.Library": "2.0.1"
+          "NETStandard.Library": "2.0.0"
         },
         "runtime": {
           "lib/netstandard1.0/Google.Protobuf.dll": {}
@@ -97,7 +97,7 @@
           "lib/netstandard2.0/MySql.Data.dll": {}
         }
       },
-      "NETStandard.Library/2.0.1": {
+      "NETStandard.Library/2.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
@@ -254,12 +254,12 @@
       "path": "mysql.data/8.0.13",
       "hashPath": "mysql.data.8.0.13.nupkg.sha512"
     },
-    "NETStandard.Library/2.0.1": {
+    "NETStandard.Library/2.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-oA6nwv9MhEKYvLpjZ0ggSpb1g4CQViDVQjLUcDWg598jtvJbpfeP2reqwI1GLW2TbxC/Ml7xL6BBR1HmKPXlTg==",
-      "path": "netstandard.library/2.0.1",
-      "hashPath": "netstandard.library.2.0.1.nupkg.sha512"
+      "sha512": "sha512-7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
+      "path": "netstandard.library/2.0.0",
+      "hashPath": "netstandard.library.2.0.0.nupkg.sha512"
     },
     "System.Buffers/4.4.0": {
       "type": "package",

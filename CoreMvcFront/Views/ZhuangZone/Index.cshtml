@@ -1,1 +1,65 @@
-<h1>Index</h1>
+<style>
+    #MainBody{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        text-align:center;
+    }
+    #dailyNews{
+        
+    }
+    hr{
+        border:1px solid black;
+        width:100%;
+    }
+    .News{
+        margin:auto;
+        width:60%;
+        text-align:left;
+    }
+    .News div div:nth-child(even){
+        padding-left:2em;
+    }
+</style>
+<script>
+    $(document).ready(function(){
+        $.ajax({
+            url:"WebAPIs/GetDailyNews",
+            type:"POST"
+        }).done(function(result){
+            console.log(result);
+        });
+    });
+</script>
+<div id="MainBody">
+    <h1>每日頭條</h1>
+    <div id="dailyNews">
+        <div class="News">
+            <div>
+                <div>
+                    日期:
+                </div>
+                <div>
+                    2018/11/22
+                </div>
+            </div>
+            <div>
+                <div>
+                    標題:
+                </div>
+                <div>
+                    測試
+                </div>  
+            </div>
+            <div>
+                <div>
+                    內文:
+                </div>
+                <div>
+                    123
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+</div>

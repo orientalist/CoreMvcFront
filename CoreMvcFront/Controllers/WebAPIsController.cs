@@ -37,5 +37,22 @@ namespace CoreMvcFront.Front
             }
             return Json(Result);
         }
+
+        [HttpGet]
+        public IActionResult GetDailyNews(){
+            ResponseModel Result=new ResponseModel();
+            DailyNewsBL dailyNewsBL=new DailyNewsBL();
+            try{
+                List<DailyNews> _DailyNews=dailyNewsBL.GetDailyNews(ConfigHelper.ConnectionString);
+                if(_DailyNews.Count>0){
+                    Result.HttpStatus="1";
+                    Result.Data=_DailyNews;
+                }
+            }
+            catch(Exception ex){
+
+            }
+            return Json(Result);
+        }
     }
 }
