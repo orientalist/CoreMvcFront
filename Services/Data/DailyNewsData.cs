@@ -9,7 +9,7 @@ namespace CoreMvcFront.Services{
             using(MySql.Data.MySqlClient.MySqlConnection sqlConnection=new MySql.Data.MySqlClient.MySqlConnection(Conn)){
                 SQLs.AppendLine("SELECT * ");
                 SQLs.AppendLine("FROM CoreMVCBackend.DailyNews "); 
-                SQLs.AppendLine("WHERE ItemStatus!=3 ");
+                SQLs.AppendLine("WHERE Status!=3 ");
                 SQLs.AppendLine("ORDER BY NewsDate DESC");
 
                 List<DailyNews> news=sqlConnection.Query<DailyNews>(SQLs.ToString()).AsList();

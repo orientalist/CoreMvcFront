@@ -6,8 +6,10 @@ namespace CoreMvcFront.Model{
 
         public DateTime NewsDate{get;set;}
 
-        public string Subhect{get;set;}
+        public string Subject{get;set;}
 
         public string Context{get;set;}
+
+        public int Status{get;set;}
     }
 }
