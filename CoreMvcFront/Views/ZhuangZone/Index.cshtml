@@ -21,11 +21,17 @@
         padding-left:2em;
     }
 </style>
+<div id="MainBody">
+    <h1>每日頭條</h1>
+    <div id="dailyNews">
+        
+    </div>
+</div>
 <script>
     $(document).ready(function(){
         $.ajax({
-            url:"WebAPIs/GetDailyNews",
-            type:"GET"
+            url:"/WebAPIs/GetDailyNews",
+            type:"POST"
         }).done(function(result){
             $.each(result.data,function(index,value){
                 var news='<div class="News"><div><div>日期:</div><div>'+
@@ -40,9 +46,3 @@
         });
     });
 </script>
-<div id="MainBody">
-    <h1>每日頭條</h1>
-    <div id="dailyNews">
-        
-    </div>
-</div>

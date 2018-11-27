@@ -38,7 +38,7 @@ namespace CoreMvcFront.Front
             return Json(Result);
         }
 
-        [HttpGet]
+        [HttpPost]
         public IActionResult GetDailyNews(){
             ResponseModel Result=new ResponseModel();
             DailyNewsBL dailyNewsBL=new DailyNewsBL();
